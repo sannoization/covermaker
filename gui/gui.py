@@ -1,13 +1,22 @@
 import dearpygui.dearpygui as dpg
+import main
+from main import run
 
 dpg.create_context()
-dpg.create_viewport(title='Custom Title', width=600, height=300)
+dpg.create_viewport(title='Covermaker 1.0.0', width=500, height=500)
 
-with dpg.window(label="Example Window"):
-    dpg.add_text("Hello, world")
+with dpg.handler_registry():
+    run()
+with dpg.window(label="Covermaker 1.0.0",
+                width=500,
+                height=500,
+                no_resize=True,
+                no_move=True):
+    dpg.add_text("Enter heading")
+    dpg.add_input_text(default_value="Quick brown fox", tag="heading")
+    dpg.add_text("Enter date")
+    dpg.add_input_text(default_value="2022/02/02", tag="date")
     dpg.add_button(label="Save")
-    dpg.add_input_text(label="string", default_value="Quick brown fox")
-    dpg.add_slider_float(label="float", default_value=0.273, max_value=1)
 
 dpg.setup_dearpygui()
 dpg.show_viewport()

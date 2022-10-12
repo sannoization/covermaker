@@ -5,16 +5,6 @@ def run():
     background = cv2.imread('bg.jpg')
     overlay = cv2.imread('image.png')
 
-
-    red = "красный"
-    blue = "синий"
-    green = "зеленый"
-    # color1 = input()
-    # color2 = input()
-    #
-    # if color1 != red or color1 != blue or color1 != green:
-    #     print("ошибка")
-
     print("введите заголовок")
     # header_string = input("введите заголовок \n")
     header_string = "Лучший студенческий совет НГТУ \n им. Р. Е. Алексеева 2022"
