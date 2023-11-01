@@ -6,7 +6,7 @@ covermaker for NNSTU mediacenter on py, dearpygui, opencv
 source venv/bin/activate
 ```
 ```
- python3 -m pip install requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## Run

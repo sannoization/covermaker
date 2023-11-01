@@ -45,7 +45,7 @@ with dpg.window(label="Covermaker 1.0.0",
                        hint='01.02.2022',
                        multiline=True,
                        height=100)
-    text3 = dpg.add_text("Enter filename")
+    text3 = dpg.add_text("Enter output filename")
     input3 = dpg.add_input_text(tag="result_image",
                        hint='filename')
     dpg.add_spacer(height=3)
